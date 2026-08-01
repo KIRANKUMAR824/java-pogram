@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int cm = scan.nextInt();
+
+        double totalInches = cm / 2.54;
+        int feet = (int)(totalInches / 12);
+        double inches = totalInches % 12;
+
+        System.out.printf("Height in feet and inches: %d' %.1f\"", feet, inches);
+
+        scan.close();
+    }
+}
